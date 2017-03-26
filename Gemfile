@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # put this in development eventually
+gem 'pry'
 gem 'wirble'
 gem 'awesome_print'
 gem 'haml', '~> 4.0', '>= 4.0.7'
