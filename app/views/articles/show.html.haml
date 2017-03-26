@@ -3,8 +3,16 @@
 %h1= @article.title
 %p= @article.body
 
+
+= render partial: 'comments/form'
+
 %a= link_to 'back to all articles', '/articles', class: 'back_to_index'
 
-%a= link_to 'delete this article', article_path(@article), method: :delete, data: {confirm: "really delete the article?"}
+%a= link_to 'delete this article', article_path(@article), method: :delete, data: { confirm: 'really delete the article?' }
 
 %a= link_to 'edit this article', edit_article_path(@article)
+
+
+%h3 Comments
+
+%p= render partial: 'articles/comment', collection: @article.comments.reverse
