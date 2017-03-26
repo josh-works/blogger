@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# put this in development eventually
+gem 'wirble'
+gem 'awesome_print'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
 
