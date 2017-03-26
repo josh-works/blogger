@@ -1,5 +1,7 @@
 
 %ul#articles
   - @articles.each do |x|
-    %h1= x.title
+    %li= link_to x.title, article_path(x), class: 'article_title'
     %p= x.body
+
+#a= link_to 'Create a new article', '/articles/new', class: 'new_article'
