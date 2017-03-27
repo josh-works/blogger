@@ -1,6 +1,12 @@
 %pre= params.to_s
 
 %h1= @article.title
+
+%h3 Tags:
+
+  = @article.tags.each do |tag|
+  = link_to tag.name, tag_path(tag)
+
 %p= @article.body
 
 = render partial: 'comments/form'

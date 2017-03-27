@@ -1,10 +1,14 @@
 source 'https://rubygems.org'
 
 # put this in development eventually
-gem 'pry'
-gem 'wirble'
-gem 'awesome_print'
-gem 'haml', '~> 4.0', '>= 4.0.7'
+
+group :development do
+  gem 'meta_request'
+  gem 'pry'
+  gem 'wirble'
+  gem 'awesome_print'
+  gem 'haml', '~> 4.0', '>= 4.0.7'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
@@ -37,6 +41,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'paperclip'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
